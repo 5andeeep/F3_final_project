@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <body>
+    <div id="ip-div">
+      <video autoplay loop muted plays-inline class="bg-video">
+        <source src="Hologram_Planet_by_nuva.mov" type="video/mp4" />
+      </video>
+      <p class="ip-add">My Public IP Address: <span class="ip-span"></span></p>
+      <div id="btn-div">
+        <button id="get-data-btn" onclick="getData()">Get Data</button>
+      </div>
+    </div>
+    <div class="main-container active">
+      <div class="show-ip-address">
+        <span class="ip-add-1">My Public IP Address:</span>
+        <span class="ip-span"></span>
+      </div>
+      <div class="location-info">
+        <!-- <div class="lat-lon-info">
+          <p id="latitude-info">Lat: <span id="lat"></span></p>
+          <p id="longitude-info">Lon: <span id="lon"></span></p>
+        </div>
+        <div class="city-region-info">
+          <p id="city-inof">City: <span id="city"></span></p>
+          <p id="region-info">Region: <span id="region"></span></p>
+        </div>
+        <div class="org-host-info">
+          <p id="org-info">Organization: <span id="organization"></span></p>
+          <div>
+            <p id="host-info">Hostname:<p>
+            <span id="hostname"></span>
+          </div>
+        </div> -->
+      </div>
+      <div class="map-area">
+        <iframe src="" id="map-box" frameborder="0" style="border: 0"></iframe>
+      </div>
+      <div class="some-info">
+        <!-- <p id="timezone">Time Zone: <span id="time-zone"></span></p>
+        <p id="date-time">Date and Time: <span id="date-time"></span></p>
+        <p id="pincode">Pincode: <span id="pin-code"></span></p>
+        <p id="message">Number of pincode(s) found: </p> -->
+      </div>
+      <div class="all-postoffice">
+        <p id="message">Message: <span id="msg-span"></span></p>
+        <div class="search-area">
+          <span class="material-symbols-outlined"> search </span>
+          <input type="text" id="search-input" placeholder="search" />
+        </div>
+        <div class="only-cards-container">
+          <!-- <div class="postoffice-info-cards">
+            <div class="postoffice-name">
+              <p>Name</p>
+              <p></p>
+            </div>
+            <div class="postoffice-branchType">
+              <p>Branch Type</p>
+              <p></p>
+            </div>
+            <div class="postoffice-dStatus">
+              <p>Delivery Status</p>
+              <p></p>
+            </div>
+            <div class="postoffice-district">
+              <p>District</p>
+              <p></p>
+            </div>
+            <div class="postoffice-division">
+              <p>Division</p>
+              <p></p>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
